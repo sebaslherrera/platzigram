@@ -17,6 +17,11 @@ from django.contrib.auth.models import User
 from users.models import Profile
 
 
+def update_profile(request):
+    """Update a user's profile view."""
+    return render(request, 'users/update_profile.html')
+
+
 def login_view(request):
     """Login view."""
     if request.method == 'POST':
@@ -65,7 +70,7 @@ def signup(request):
                 request,
                 'users/signup.html',
                 {'error': 'Username is already in use'}
-                )        
+                )
         user.first_name = request.POST['first_name']
         user.last_name = request.POST['last_name']
         user.email = request.POST['email']

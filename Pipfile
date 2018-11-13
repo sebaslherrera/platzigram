@@ -9,6 +9,8 @@ Django = "==2.1.2"
 Pillow = "==5.3.0"
 
 [dev-packages]
+"pep8" = "*"
+"autopep8" = "*"
 
 [requires]
 python_version = "3.7"
