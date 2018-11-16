@@ -9,7 +9,7 @@
 <p class="alert alert-danger">{{ error }}</p>
 {% else %}
 {% endif %}
-<form action="{% url 'login' %}" method="post">
+<form action="{% url 'users:login' %}" method="post">
     {% csrf_token %}
 
     <div class="form-group">
@@ -22,5 +22,5 @@
     <button class="btn btn-primary btn-block mt-5" type="submit">Sign it!</button>
 
 </form>
-<p class="mt-4">Don't have an account yet?  <a href="{% url "signup" %}">Sign up here.</a></p>
+<p class="mt-4">Don't have an account yet?  <a href="{% url "users:signup" %}">Sign up here.</a></p>
 {% endblock container %}
