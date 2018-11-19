@@ -2,25 +2,30 @@
 
 {% block head_content %}
 <title>Platzigram sign in</title>
-{% endblock head_content %}
+{% endblock%}
 
 {% block container %}
-{% if error %}
-<p class="alert alert-danger">{{ error }}</p>
-{% else %}
-{% endif %}
-<form action="{% url 'users:login' %}" method="post">
-    {% csrf_token %}
 
-    <div class="form-group">
-        <input class="form-control" type="text" name="username" placeholder="Username" />
-    </div>
-    <div class="form-group">
-        <input class="form-control" type="password" name="password" placeholder="Password" />
-    </div>
+    {% if error %}
+        <p class="alert alert-danger">{{ error }}</p>
+    {% endif%}
 
-    <button class="btn btn-primary btn-block mt-5" type="submit">Sign it!</button>
+    <form method="POST" action="{% url "users:login" %}">
+        {% csrf_token %}
 
-</form>
-<p class="mt-4">Don't have an account yet?  <a href="{% url "users:signup" %}">Sign up here.</a></p>
-{% endblock container %}
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="Username" name="username" />
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" type="password" placeholder="Password" name="password" />
+        </div>
+
+
+        <button class="btn btn-primary btn-block mt-5" type="submit">Sign in!</button>
+
+    </form>
+
+    <p class="mt-4">Don't have an account yet? <a href="{% url "users:signup" %}">Sign up here.</a></p>
+
+{% endblock %}

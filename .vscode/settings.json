@@ -1,6 +1,7 @@
 {
-    "python.pythonPath": "C:\\Users\\Usuario\\.virtualenvs\\platzigram-2p0y3iYl\\Scripts\\python.exe",
+    "python.pythonPath": "C:\\Users\\sebas119\\.virtualenvs\\platzigram-XHa62evw\\Scripts\\python.exe",
     "python.linting.enabled": true,
     "python.linting.lintOnSave": true,
-    "python.linting.pep8Enabled": true
+    "python.linting.pep8Enabled": true,
+    "python.linting.pylintEnabled": false
 }
