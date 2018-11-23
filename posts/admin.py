@@ -1,4 +1,4 @@
-"""Posts model."""
+"""Posts admin classes"""
 
 # Django
 from django.contrib import admin

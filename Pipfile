@@ -11,6 +11,7 @@ Pillow = "==5.3.0"
 [dev-packages]
 "pep8" = "*"
 "autopep8" = "*"
+django-debug-toolbar = "*"
 
 [requires]
 python_version = "3.7"
