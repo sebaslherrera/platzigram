@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 django-allauth = "==0.37.1"
 Django = "==2.1.2"
-Pillow = "==5.3.0"
+Pillow = "==9.0.1"
 
 [dev-packages]
 "pep8" = "*"
